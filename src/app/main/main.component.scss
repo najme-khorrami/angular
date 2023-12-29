@@ -1,0 +1,31 @@
+.main-container {
+    .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .btn {
+            background: linear-gradient(60deg,orange 0%,red 50%,purple 100%);
+            border-radius: 5px;
+            position: absolute;
+            bottom: 110px;
+            .mat-btn {
+                background-color: white;
+                margin: 1px;
+                padding: 25px 18px 26px;
+                font-size: 18px;
+            }
+        }
+        .more-icon {
+            position: absolute;
+            bottom: 50px;
+            .icon {
+                width: 40px;
+                height: 30px;
+                font-size: 40px;
+            }
+        }
+    }
+}

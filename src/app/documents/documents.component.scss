@@ -1,0 +1,18 @@
+.document-container {
+    width: 100%;
+    height: 100%;
+    .sidenav {
+        width: 250px;
+        height: 100vh;
+        .small-title {
+            margin-top: 30px;
+            padding-left: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        mat-icon {
+            position: absolute;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<mat-sidenav-container class="document-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <mat-nav-list>
+        <p class="small-title">introduction</p>
+        <a mat-list-item *ngFor="let item of introMenuList" [routerLink]="item.link" routerLinkActive="active" class="item">
+            {{ item.title }}
+            <mat-icon *ngIf="item.children">chevron_right</mat-icon>
+        </a>
+        <p class="small-title">In-depth Guides</p>
+        <a mat-list-item *ngFor="let item of guideMenuList" [routerLink]="item.link" routerLinkActive="active" class="item">
+            {{ item.title }}
+            <mat-icon *ngIf="item.children">chevron_right</mat-icon>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
